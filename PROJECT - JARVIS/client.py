@@ -4,7 +4,7 @@
 # # pip install openai 
 # # if you saved the key under a different environment variable name, you can do something like:
 # client = OpenAI(
-#   api_key="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",
+#   api_key="your API key",
 #   )
 
 # completion = client.chat.completions.create(
@@ -23,7 +23,7 @@
 
 # from groq import Groq
 
-# client = Groq(api_key="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")
+# client = Groq(api_key="your API key")
 
 # chat_completion = client.chat.completions.create(
 #     messages=[
@@ -47,7 +47,7 @@ from google.genai import types
 
 
 client = genai.Client(
-    api_key="AIzaSyC6HZzq9K-wuJC-giKIuAOr8kVahUv8oT0"
+    api_key="your API key"
 )
 
 response = client.models.generate_content(
