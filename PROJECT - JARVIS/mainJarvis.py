@@ -15,7 +15,7 @@ from google.genai import types
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
-newsapi = "eab22826b8514130872a2b270696fe97"
+newsapi = "your API key"
 
 def speak_old(text):
     engine.say(text)
@@ -45,7 +45,7 @@ def speak(text):
 
 def aiProcess(command):
     client = genai.Client(
-    api_key="AIzaSyC6HZzq9K-wuJC-giKIuAOr8kVahUv8oT0"
+    api_key="your API key"
     )
     
     response = client.models.generate_content(
